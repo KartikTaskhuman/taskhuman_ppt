@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>TaskHuman AI Overvew - V0.1 and Beyond</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>TaskHuman AI Overview</h2>
+					<p>
+						<medium>Created by <a href="https://www.linkedin.com/in/kartikpadmanabhan">Kartik Padmanabhan</a></medium>
+						<br>
+						<br>
+						<small>More information on <a href="https://taskhuman.atlassian.net/wiki/spaces/TDS/overview">Confluence</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>Overall Goal For AI Platform</li>
+						<li>AI Overview - MVP</li>
+							<ul>
+								<small><li>TaskHuman Topic Analyzers</li></small>
+								<br>
+								<small><li>TaskHuman Recommendation Services</li></small>
+								<br>
+								<small><li>TaskHuman Search Service</li></small>
+							</ul>
+						<li>AI Services-Production Readiness</li>
+						    <ul>
+							    <small><li>Load Tests</li></small>
+							    <small><li>Benchmarks</li></small>
+							    <small><li>Production Deployment Architecture</li></small>
+							</ul>
+						<li>AI Plans - Beyond MVP</li>
+						    <ul>
+							    <small><li>Overview of Projects Planned</li></small>
+							</ul>
+					</ul>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Overall Goals - AI Platform</h2>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>High Level View (HLD)</h2>
+						<img data-src="assets/taskhuman_architecture.jpg">
+					</section>
+					<section>
+						<h2>Low Level View (LLD)</h2>
+						<img data-src="assets/architecture_1.png">
+					</section>
+					<section>
+						<h2>Detailed Level Design (DLD)</h2>
+						<img data-src="assets/architecture_2.png">
+					</section>
+					<section>
+						<h2>Overall Goals - AI Platform </h2>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow">
+						</a>
+					</section>
+				</section>
+
+				<section>
+						<h2> AI Overview - MVP </h2>
+				</section>
+
+				<section>
+					<section>
+						<h2>TaskHuman Topic Analyzers</h2>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>TaskHuman Topic Analyzers</h2>
+						<img data-src="assets/topic_analyzer.png">
+						<small>Try out live at <a href="http://aidemos.taskhuman.com/app1">http://aidemos.taskhuman.com/app1</a></small>
+					</section>
+					<section>
+						<h2>TaskHuman Topic Analyzers</h2>
+					    <div>
+					        <a href="https://plot.ly/~kthumbav/13/?share_key=VnTa7iofBNwe83MUgU55Fr" target="_blank" title="Plot 13" style="display: block; text-align: center;"><img src="https://plot.ly/~kthumbav/13.png?share_key=VnTa7iofBNwe83MUgU55Fr" alt="Plot 13" style="max-width: 100%;width: 600px;"  width="800" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+					        <script data-plotly="kthumbav:13" sharekey-plotly="VnTa7iofBNwe83MUgU55Fr" src="https://plot.ly/embed.js" async></script>
+					    </div>
+					</section>
+					<section>
+						<h2>TaskHuman Topic Analyzers</h2>
+						<img data-src="assets/lsi.gif">
+					</section>
+					<section>
+						<h2>TaskHuman Topic Analyzers</h2>
+						<img data-src="assets/tsne_lsi.png">
+					</section>
+					<section>
+						<h2>TaskHuman Topic Analyzers</h2>
+						<img data-src="assets/svd.png">
+					</section>
+					<section>
+						<h2>TaskHuman Topic Analyzers</h2>
+						<br>
+						<a href="#/4">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>TaskHuman Recommendation Engine</h2>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>TaskHuman Recommendation Engine</h2>
+						<img data-src="assets/recommendations.png">
+						<small>Try out live at <a href="http://aidemos.taskhuman.com/app3">http://aidemos.taskhuman.com/app3</a></small>
+					</section>
+					
+					<section data-background-video="assets/graphical_recs.mov" data-background-video-loop data-background-video-muted>
+						<h2>Graph Based Recommendation</h2>
+					</section>
+
+					<section>
+						<h2> Word2Vec Recommenders </h2>
+						<img data-src="https://image.slidesharecdn.com/word2vec-170504121938/95/word2vec-and-friends-4-638.jpg?cb=1493900554">
+					</section>
+					<section>
+						<h2> TFIDF Recommenders </h2>
+						<img data-src="https://i1.wp.com/datameetsmedia.com/wp-content/uploads/2017/05/bf.jpeg?resize=800%2C299">
+					</section>
+					<section>
+						<h2> Approximate Neighbours </h2>
+						<img data-src="https://erikbern.com/wp-content/uploads/2015/09/animated.gif">
+					</section>
+					<section>
+						<h2>TaskHuman Recommendation Engine</h2>
+						<br>
+						<a href="#/5">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>TaskHuman Search Service</h2>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+
+					<section>
+						<h3>TaskHuman Search - Design Challenges</h3>
+						<img data-src="assets/web_archive.png">
+					</section>
+
+					<section>
+						<h3>TaskHuman Search - Design Challenges</h3>
+						<img height="500" data-src="assets/conceptual_search.png">
+					</section>
+
+					<section>
+						<h3>TaskHuman Search - Design Challenges</h3>
+						<img height="500"  data-src="assets/search_challenge_3.png">
+					</section>
+
+
+					<section>
+						<h3>TaskHuman Conceptual Search</h3>
+						<img height="500" data-src="assets/conceptual_search_2.png">
+						<small>Try out live at <a href="http://aidemos.taskhuman.com/wikisearch">http://aidemos.taskhuman.com/wikisearch</a></small>
+					</section>
+
+					<section>
+						<h3>TaskHuman Search Architecture</h3>
+						<img width="500" height="550"  data-src="assets/taskhuman_search.png">
+					</section>
+
+					<section>
+						<h2>TaskHuman Search Service</h2>
+						<br>
+						<a href="#/6">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>TaskHuman AI - Beyond MVP</h2>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+
+					<section>
+						<h3>Improving Search Accuracy</h3>
+						<img data-src="assets/search_improvements.png">
+					</section>
+
+					<section>
+						<h3>Improving Search Accuracy</h3>
+						<img data-src="assets/search_accuracy.png">
+					</section>
+
+					<section>
+						<h3>Provider Ranking</h3>
+						<img data-src="assets/provider_ranking.png">
+					</section>
+
+					<section>
+						<h3>User Clickstream Models</h3>
+						<img data-src="assets/clickstream.jpg">
+						<small>understand user intents from clickstream logs</small>
+					</section>
+
+					<section>
+						<h3>Dynamic category additions</h3>
+						<img data-src="assets/provider_push.png">
+						<small>understand user intents from clickstream logs</small>
+					</section>
+
+					<section>
+						<h3>Targetted marketing</h3>
+						<img height="600" data-src="assets/provider_notifications_2.png">
+					</section>
+
+						
+					<section data-background-video="assets/bot.mov" data-background-video-loop data-background-video-muted>
+						<h3>Chatbots for Provider Onboarding</h3>
+					</section>
+
+					<section>
+						<h2>TaskHuman AI - Beyond MVP</h2>
+						<br>
+						<a href="#/7">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow">
+						</a>
+					</section>
+				</section>
+
+
+				<section data-background-image="https://media.giphy.com/media/Kp83DtPggHcVq/giphy.gif" data-background-size="1200px" data-background-repeat="repeat">
+					<h2>Questions???</h2>
+				</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				parallaxBackgroundImage: 'assets/image.png',
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
